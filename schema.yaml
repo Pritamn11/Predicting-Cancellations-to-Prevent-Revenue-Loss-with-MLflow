@@ -1,0 +1,22 @@
+COLUMNS:
+  Booking_ID: object
+  number of adults: int64
+  number of children: int64
+  number of weekend nights: int64
+  number of week nights: int64
+  type of meal: object
+  car parking space: int64
+  room type: object
+  lead time: int64
+  market segment type: object
+  repeated: int64
+  P-C: int64
+  P-not-C: int64
+  average price: float64
+  special requests: int64
+  date of reservation: object
+  booking status: object
+
+TARGET_COLUMN:
+  name: booking status
+   
