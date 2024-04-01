@@ -30,4 +30,3 @@ model_evaluation:
   model_path: artifacts/model_trainer/model.joblib   
   metric_file_name: artifacts/model_evaluation/metrics.json
 
-  

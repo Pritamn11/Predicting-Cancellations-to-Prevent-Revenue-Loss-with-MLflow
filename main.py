@@ -6,6 +6,7 @@ from src.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from src.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from src.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
 from src.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
+from src.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
  
 
 STAGE_NAME = "Data Ingestion"
@@ -53,3 +54,13 @@ if __name__=="__main__":
         raise CustomException(e,sys)    
     
 
+
+STAGE_NAME = "Model Evaluation stage"
+if __name__=="__main__":
+    try:
+        logging.info(f">>>>>> Stage {STAGE_NAME} started <<<<<<<")
+        model_eval = ModelEvaluationTrainingPipeline()
+        model_eval.main()
+        logging.info(f"=======> Stage {STAGE_NAME} completed <======= \n\nx==========x")
+    except Exception as e:
+        raise CustomException(e,sys)    

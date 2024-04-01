@@ -1,4 +1,5 @@
-# End-to-End-ML-Approach-to-Wine-Quality-Prediction-with-MLflow
+# End-to-End-ML-Approach-Predicting-Cancellations-to-Prevent-Revenue-Loss-with-MLflow
+
 
 ## Workflows 
 
@@ -20,7 +21,7 @@
 Clone the repository 
 
 ```bash
-https://github.com/Pritamn11/End-to-End-ML-Approach-to-Wine-Quality-Prediction-with-MLflow
+https://github.com/Pritamn11/Predicting-Cancellations-to-Prevent-Revenue-Loss-with-MLflow.git
 ```
 
 #### STEPS 01 - Create a virtual environment after opening the repository
@@ -30,7 +31,7 @@ python -m venv newenv
 ```
 
 ```bash
-.\newenv\Scripts\activate
+source /newenv/Scripts/activate
 ```
  
 #### STEPS 02 - Install the requirements
@@ -62,7 +63,7 @@ open up you local host and port
 ## dagshub 
 [dagshub](https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/pritamnarwade11/End-to-End-ML-Approach-to-Wine-Quality-Prediction-with-MLflow.mlflow \
+MLFLOW_TRACKING_URI=https://dagshub.com/pritamnarwade11/Predicting-Cancellations-to-Prevent-Revenue-Loss-with-MLflow.mlflow \
 MLFLOW_TRACKING_USERNAME=pritamnarwade11 \
 MLFLOW_TRACKING_PASSWORD=871b76c6a3213893886036cf5681b2454522ec97 \
 python script.py
@@ -71,11 +72,11 @@ Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/pritamnarwade11/End-to-End-ML-Approach-to-Wine-Quality-Prediction-with-MLflow.mlflow 
+export MLFLOW_TRACKING_URI=MLFLOW_TRACKING_URI=https://dagshub.com/pritamnarwade11/Predicting-Cancellations-to-Prevent-Revenue-Loss-with-MLflow.mlflow 
 
 export MLFLOW_TRACKING_USERNAME=pritamnarwade11 
 
-export MLFLOW_TRACKING_PASSWORD=871b76c6a3213893886036cf5681b2454522ec97 
+export MLFLOW_TRACKING_PASSWORD=871b76c6a3213893886036cf5681b2454522ec97
 
 ```
 
