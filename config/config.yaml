@@ -15,6 +15,7 @@ data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/booking.csv
   preprocessing_data : artifacts/data_ingestion/data.csv
+  preprocessor : preprocessor.joblib
   train: artifacts/data_transformation/train.csv
   test: artifacts/data_transformation/test.csv
 

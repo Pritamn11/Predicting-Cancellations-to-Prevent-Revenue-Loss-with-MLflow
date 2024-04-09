@@ -23,7 +23,9 @@ class DataTransformationConfig:
     root_dir: Path
     data_path: str
     preprocessing_data : str
+    preprocessor : str
     train: Path
+    test: Path
     test: Path    
 
  

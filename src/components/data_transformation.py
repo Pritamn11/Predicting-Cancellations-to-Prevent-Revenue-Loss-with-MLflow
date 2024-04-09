@@ -9,6 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import  train_test_split
 import pandas as pd
 import numpy as np
+import joblib
 from src.entity.config_entity import DataTransformationConfig
  
 
@@ -132,6 +133,10 @@ class DataTransformation:
             
             logging.info("Successfully applied preprocessor object on train and test data")
 
+            joblib.dump(preprocessor_obj, os.path.join(self.config.root_dir, self.config.preprocessor))
+            logging.info("Preprocessor saved to file using joblib")
+
+
             train_arr = np.c_[train_df, np.array(target_train_df)]
             test_arr = np.c_[test_df, np.array(target_test_df)]
             logging.info("Returning train and test array")
@@ -148,3 +153,4 @@ class DataTransformation:
         except Exception as e:
             logging.info("Error occured in data transformation")
             raise CustomException(e,sys)
+
