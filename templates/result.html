@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Make Prediction</title>
 </head>
 <body>
-    <h1>This is result page</h1>
+    <h2>Input Values for Prediction</h2>
+    <form action="/predict" method="post">
+
+        <label for="number_of_adults">Number of Adults:</label>
+        <input type="number" id="number_of_adults" name="number_of_adults" required><br><br>
+
+        <label for="number_of_children">Number of Children:</label>
+        <input type="number" id="number_of_children" name="number_of_children" required><br><br>
+
+        <label for="number_of_weekend_nights">Number of Weekend Nights:</label>
+        <input type="number" id="number_of_weekend_nights" name="number_of_weekend_nights" required><br><br>
+
+        <label for="number_of_week_nights">Number of Week Nights:</label>
+        <input type="number" id="number_of_week_nights" name="number_of_week_nights" required><br><br>
+
+        <label for="type_of_meal">Type of Meal:</label>
+        <select id="type_of_meal" name="type_of_meal" required>
+            <option value="Meal Plan 1">Meal Plan 1</option>
+            <option value="Not Selected">Not Selected</option>
+            <option value="Meal Plan 2">Meal Plan 2</option>
+            <option value="Meal Plan 3">Meal Plan 3</option>
+        </select><br><br>
+
+        <label for="car_parking_space">Car Parking Space:</label>
+        <input type="number" id="car_parking_space" name="car_parking_space" required><br><br>
+
+        <label for="room_type">Room Type:</label>
+        <select type="text" id="room_type" name="room_type" required>
+            <option value="Room_Type 1">Room_Type 1</option>
+            <option value="Room_Type 4">Room_Type 4</option>
+            <option value="Room_Type 2">Room_Type 2</option>
+            <option value="Room_Type 6">Room_Type 6</option>
+            <option value="Room_Type 5">Room_Type 5</option>
+            <option value="Room_Type 7">Room_Type 7</option>
+            <option value="Room_Type 3">Room_Type 3</option>
+        <select></select><br><br>
+
+        <label for="lead_time">Lead Time:</label>
+        <input type="number" id="lead_time" name="lead_time" required><br><br>
+
+        <label for="market_segment_type">Market Segment Type:</label>
+        <select type="text" id="market_segment_type" name="market_segment_type" required>
+            <option value="Offline">Offline</option>
+            <option value="Online">Online</option>
+            <option value="Corporate">Corporate</option>
+            <option value="Aviation">Aviation</option>
+            <option value="Complementary">Complementary</option>
+        </select><br><br>
+
+        <label for="repeated">Repeated:</label>
+        <input type="number" id="repeated" name="repeated" required><br><br>
+
+        <label for="P_C">P-C:</label>
+        <input type="number" id="P_C" name="P_C" required><br><br>
+
+        <label for="P_not_C">P-not-C:</label>
+        <input type="number" id="P_not_C" name="P_not_C" required><br><br>
+
+        <label for="average_price">Average Price:</label>
+        <input type="number" id="average_price" name="average_price" step="0.01" required><br><br>
+
+        <label for="special_requests">Special Requests:</label>
+        <input type="number" id="special_requests" name="special_requests" required><br><br>
+
+        <label for="month">Month:</label>
+        <input type="number" id="month" name="month" required><br><br>
+
+        <input type="submit" value="Make Prediction">
+    </form>
+
+    <h2>
+        Prediction - {% if output == 1 %} Not Canceled {% else %} Canceled {% endif %}
+    </h2>
 </body>
 </html>
